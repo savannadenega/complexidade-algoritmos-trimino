@@ -6,13 +6,13 @@
 
 import java.util.*;
 
-public class trimino {
+public class Trimino{
 	
 	private int[][] tabela;
 	private int numAtual;
 	
-	public trimino(int tam, int x, int y) {
-		
+	public Trimino(int tam, int x, int y) {
+
 		int tamAtual = 1;
 		while (tamAtual < tam) tamAtual*=2;
 
@@ -173,7 +173,7 @@ public class trimino {
 		int y = stdin.nextInt();
 		
 // Cria o objeto triminó com os dados inseridos
-		trimino objeto = new trimino(tam, x, y);
+		Trimino objeto = new Trimino(tam, x, y);
 		objeto.jogo();
 		
 // Imprime a tabela final, com as peças colocadas
